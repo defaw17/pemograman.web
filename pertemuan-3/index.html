@@ -7,19 +7,53 @@
 </head>
 <body>
     <form method="post" enctype="multipart/form-data">
-        <table>
+        <table border="1" align="center" cellpadding="10" cellspacing="0">
             <thead>
                 <th colspan="3">Form Input Mahaiswa</th>
             </thead>
+            <tbody>
+                <tr>
+                    <td>NIM</td>
+                    <td><input type="number" name="nim" required></td>
+                </tr>
+                <tr>
+                    <td>Nama</td>
+                    <td><input type="text" name="nama" required></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <input type="radio" name="jk" value="Laki-laki" required>Laki-laki
+                        <input type="radio" name="jk" value="Perempuan" required>Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Program Studi</td>
+                    <td>
+                        <select name="prodi" id="prodi" required>
+                            <option value="" selected disabled>--Pilih Program Studi--</option>
+                            <option value="Manajemen Informatika">Manajemen Informatika</option>
+                            <option value="Sistem Informasi">Sistem Informasi</option>
+                            <option value="Teknik Komputer">Teknik Komputer</option>
+                        </select>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>Alamat</td>
+                    <td><textarea name="alamat" required> </textarea> </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email" required></td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <input type="submit" name="submit"value="Simpan">
+                        <input type="reset" name="reset" value="Reset">
+                    </td>
+                </tr>
+            </tbody>
         </table>
-        <tbody>
-            <tr>
-                <td>Nama</td>
-                td>:</td>
-                <td><input type="text" name="nama" required></td>
-            </tr>
-            
-        </tbody>
     </form>
 </body>
 </html>
