@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+nav {
+    background-color: #080000;
+    color: #fff;
+    padding: 20px 60px 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
