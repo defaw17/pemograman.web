@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kasir UMKM</title>
+
+    <!-- Menghubungkan CSS -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Kasir UMKM</h1>
+            <p>Sistem Kasir Sederhana Toko Maju Jaya</p>
+        </header>
+        <main>
+            <!-- Form Pelanggan -->
+            <section class="card">
+                <h2>Informasi Pelanggan</h2>
+
+                <div class="form-group">
+                    <label for="namaPelanggan">
+                        Nama Pelanggan
+                    </label>
+                    <input
+                        type="text"
+                        id="namaPelanggan"
+                        placeholder="Masukkan nama pelanggan"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="statusMember">
+                        Status Pelanggan
+                    </label>
+
+                    <select id="statusMember">
+                        <option value="false">Non-Member</option>
+                        <option value="true">Member</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Daftar Produk -->
+            <section class="card">
+                <h2>Daftar Produk</h2>
+
+                <div class="product-list" id="productList">
+                    <!-- Produk dibuat menggunakan JavaScript -->
+                </div>
+            </section>
+
+            <!-- Tombol Transaksi -->
+            <section class="card">
+                <button id="btnHitung">
+                    Hitung Pembayaran
+                </button>
+
+                <button id="btnReset" class="btn-reset">
+                    Reset Transaksi
+                </button>
+            </section>
+
+            <!-- Hasil Transaksi -->
+            <section class="card result-card" id="result">
+                <h2>Rincian Pembayaran</h2>
+
+                <p>
+                    Nama Pelanggan:
+                    <strong id="hasilNama">-</strong>
+                </p>
+
+                <p>
+                    Status Member:
+                    <strong id="hasilMember">-</strong>
+                </p>
+
+                <p>
+                    Total Produk:
+                    <strong id="hasilProduk">0</strong>
+                </p>
+
+                <hr>
+
+                <p>
+                    Total Belanja:
+                    <strong id="hasilBelanja">Rp0</strong>
+                </p>
+
+                <p>
+                    Diskon:
+                    <strong id="hasilDiskon">Rp0</strong>
+                </p>
+
+                <p>
+                    Ongkos Kirim:
+                    <strong id="hasilOngkir">Rp0</strong>
+                </p>
+
+                <hr>
+
+                <div class="total">
+                    <span>Total Pembayaran</span>
+                    <strong id="hasilTotal">Rp0</strong>
+                </div>
+
+                <p class="message" id="pesan"></p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 UMKM Maju Jaya</p>
+        </footer>
+
+    </div>
+
+    <!-- Menghubungkan JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
